@@ -8,10 +8,12 @@
   "license": "MIT",
   "main": "./node_modules/react-native-scripts/build/bin/crna-entry.js",
   "scripts": {
-    "start": "react-native-scripts start",
-    "eject": "react-native-scripts eject",
     "android": "react-native-scripts android",
+    "eject": "react-native-scripts eject",
     "ios": "react-native-scripts ios",
+    "precommit": "yarn eslint .",
+    "prepush": "yarn test",
+    "start": "react-native-scripts start",
     "test": "node node_modules/jest/bin/jest.js"
   },
   "dependencies": {
@@ -25,6 +27,7 @@
     "eslint-plugin-import": "^2.9.0",
     "eslint-plugin-jsx-a11y": "^6.0.3",
     "eslint-plugin-react": "^7.7.0",
+    "husky": "^0.14.3",
     "jest-expo": "25.0.0",
     "react-native-scripts": "1.11.1",
     "react-test-renderer": "16.2.0"
