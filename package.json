@@ -13,13 +13,16 @@
     "ios": "react-native-scripts ios",
     "precommit": "yarn eslint .",
     "prepush": "yarn test",
+    "reset": "rm -rf node_modules yarn.lock",
     "start": "react-native-scripts start",
     "test": "node node_modules/jest/bin/jest.js"
   },
   "dependencies": {
     "expo": "^25.0.0",
+    "jimp": "^0.2.28",
     "react": "16.2.0",
-    "react-native": "0.52.0"
+    "react-native": "0.52.0",
+    "react-native-lightbox": "^0.7.0"
   },
   "devDependencies": {
     "eslint": "^4.18.1",
